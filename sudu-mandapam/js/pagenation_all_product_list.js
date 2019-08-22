@@ -1,0 +1,79 @@
+function load(page,serch_box_val,str_check,let_search,type_vals,ids_indst){
+		if(typeof(type_vals)=="undefined"){
+			var type_val ="";
+		} else {
+			var type_val =type_vals;
+		}
+		if(typeof(ids_indst)=="undefined"){
+			var indst_val ="";
+		} else {
+			var indst_val =ids_indst;
+		}
+		if(typeof(serch_box_val)=="undefined"){
+			var serch_box_val ="";
+		} else {
+			var serch_box_val = document.getElementById("producattype1").value;
+		}
+		if(typeof(str_check)=="undefined"){
+			var str_check ="";
+		} else {
+			var str_check =document.getElementById("selectmainselect").value;
+		}
+	 $("#loader").fadeIn('slow');
+		$.ajax({
+			url:'get_all_product_list.php?action=ajax&page='+page+'&search_val='+serch_box_val+'&str_check_box='+str_check+'&searchd='+let_search+'&type_val='+type_val+'&ids_indst='+indst_val,
+			success:function(data){
+				$("#outer_div").html(data).fadeIn('slow');
+				$("#loader").fadeOut('slow');
+			}
+		})
+	}
+	
+function fefine_search(){
+	
+var refinesearch = document.getElementById("producattype1").value;
+var check = document.getElementById("selectmainselect").value;
+var searchByName = document.getElementById("productSearch").value;
+	$("#loader").fadeIn('slow');
+		$.ajax({
+			url:'get_all_product_list.php?action=ajax&search_val='+refinesearch+'&str_check='+check+'&searchByName='+searchByName,
+			success:function(data){
+				$("#outer_div").html(data).fadeIn('slow');
+				$("#loader").fadeOut('slow');
+			}
+		})
+
+}
+
+function fefine_search1(){
+	
+var refinesearch = document.getElementById("selectmainselect").value;
+var producattype1 = document.getElementById("producattype1").value;
+	$("#loader").fadeIn('slow');
+		$.ajax({
+			url:'get_all_product_list.php?action=ajax&str_check='+refinesearch+'&search_val='+producattype1,
+			success:function(data){
+				$("#outer_div").html(data).fadeIn('slow');
+				$("#loader").fadeOut('slow');
+			}
+		})
+
+}
+
+function deleteProduct(Ids){
+	var site_url = jQuery("meta[name='siteurl']").attr("content");
+	var r = confirm("Are sure to delete product.");
+	if (r == true) {
+		x = "1";
+	} else {
+		x = "2";
+	}
+	if(x=="1") {
+		$.post("ajax_all_add_edits.php", {command: 'DeleteProductList', Ids: Ids}, function (data, status) {
+			if (jQuery.trim(data) == "1") {
+				window.location = site_url + "all-product-list.php";
+			}
+		});
+	}
+
+}

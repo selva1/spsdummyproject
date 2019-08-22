@@ -1,0 +1,41 @@
+.navNew,
+.navNew a,
+.navNew form,
+.navNew input,
+.navNew li,
+.navNew ul{border:none;margin:0;padding:0;}
+.navNew a{text-decoration:none;}
+.navNew li{list-style:none;}
+.navNew,
+input{font-family:"Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;-webkit-font-smoothing:antialiased;}
+.navNew select{border:1px solid #ccc;height:40px;margin-left:10px;width:255px;    border-radius: 5px;}
+#FIRSThOMESTYLES #firstcats1 > a{background-color:transparent;border:0 none;color:#000 !important;font-size:15px;text-decoration:none;}
+#FIRSThOMESTYLES #headersearch{margin-bottom:0;margin-left:15px;margin-top:15px;padding:10px 11px 10px 31px;width:547px;background-color:#f5f8f8;border:1px solid #ccc;float:left;}
+#FIRSThOMESTYLES .navNew{width:97%;}
+#FIRSThOMESTYLES .mega-menu{left:30px;top:60px;}
+#FIRSThOMESTYLES .nav-column h3{font-family:bold;font-size:17px;}
+.shopping-item-continue-link-serach{background:#c60a16 none repeat scroll 0 0;border:1px solid #ddd;border-radius:5px;color:#fff;font-size:14px;margin:14px 0 0 10px;padding:10px 35px;}
+.shopping-item-continue-link-serach a{color:#fff;}
+#FIRSThOMESTYLES .navNew select{background-color:#f5f8f8;border:1px solid #ccc;float:left;height:42px;margin-left:2px;margin-top:15px;width:218px;}
+#FIRSThOMESTYLES #menushovers{margin-top:120px;}
+.navNew{cursor:default;display:inline-block;/*position:relative;width:85%;z-index:999;*/}
+.navNew > li{float:left;}
+.navNew > li > a{color:#444;display:block;font-weight:bold;line-height:54px;padding:0 20px;position:relative;text-shadow:0 0 1px rgba(0,0,0,.35);transition:all .3s ease;z-index:510;}
+.navNew > li > a:focus,
+.navNew > li:hover > a{background:#4b4441;}
+.navNew > li:first-child > a{border-left:none;border-radius:3px 0 0 3px;}
+.middleUllist{padding:0 0 0 0px;}
+.middleUllist{padding:0 0 0 0px;margin-bottom:2px;}
+#firstcats1 li:hover > .mega-menu{display:block;}
+.nav-column{float:left;padding:0 10px;width:40%;height:auto;margin-top: 15px;}
+.nav-column h3{font-size:13px;margin-top:6px;}
+.subCategorys{list-style:outside none none;}
+.nav-column a{color:#888;display:block;font-size:13px;font-weight:bold;line-height:20px;}
+.nav-column a:hover{color:#ff722b;}
+#FIRSThOMESTYLES #firstcats1{width:200px;}
+#firstcats1{width:100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 14px;margin-left: 50px;}
+h3{color:#372f2b;font-size:14px;font-weight:bold;line-height:18px;margin:20px 0 10px;text-transform:uppercase;}
+.orange{color:#ff722b;}
