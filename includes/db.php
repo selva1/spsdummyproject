@@ -2,8 +2,8 @@
 function dbconnection(){
 
 $servername = "localhost";
-$username = "root";
-$password = "selvakavi123";
+$username = "phpmyadminuser";
+$password = "Selva@123";
 $dbname = "sudumandapam";
 
 // Create connection
