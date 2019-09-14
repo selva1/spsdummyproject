@@ -4,8 +4,8 @@ session_start();
 function dbconnection(){
 
 $servername = "localhost";
-$username = "root";
-$password = "selvakavi123";
+$username = "phpmyadminuser";
+$password = "Selva@123";
 $dbname = "sudumandapam";
 
 // Create connection
@@ -29,7 +29,7 @@ function url(){
   );
 }
 
-$siteAdminUrl="http://www.spsbrands.com/sudu-mandapam/";
-$siteUrl="http://www.spsbrands.com/";
-define("SITE_URL","http://www.spsbrands.com/");
+$siteAdminUrl="http://ec2-13-234-239-82.ap-south-1.compute.amazonaws.com/sudu-mandapam/";
+$siteUrl="http://ec2-13-234-239-82.ap-south-1.compute.amazonaws.com/";
+define("SITE_URL","http://ec2-13-234-239-82.ap-south-1.compute.amazonaws.com/");
 ?>
